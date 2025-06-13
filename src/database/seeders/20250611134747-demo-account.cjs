@@ -1,13 +1,13 @@
-"use strict";
+'use strict';
 
 module.exports = {
   async up(queryInterface) {
-    await queryInterface.bulkInsert("accounts", [
+    await queryInterface.bulkInsert('accounts', [
       {
         user_id: 1,
         institution_id: 1,
-        agency: "1743",
-        account: "00458231",
+        agency: '1743',
+        account: '00458231',
         balance: 1500.75,
         created_at: new Date(),
         updated_at: new Date(),
@@ -15,8 +15,8 @@ module.exports = {
       {
         user_id: 2,
         institution_id: 1,
-        agency: "4829",
-        account: "83274910",
+        agency: '4829',
+        account: '83274910',
         balance: 3200.5,
         created_at: new Date(),
         updated_at: new Date(),
@@ -24,8 +24,8 @@ module.exports = {
       {
         user_id: 3,
         institution_id: 1,
-        agency: "7854",
-        account: "18726394",
+        agency: '7854',
+        account: '18726394',
         balance: 875.25,
         created_at: new Date(),
         updated_at: new Date(),
@@ -33,8 +33,8 @@ module.exports = {
       {
         user_id: 4,
         institution_id: 1,
-        agency: "9247",
-        account: "83746201",
+        agency: '9247',
+        account: '83746201',
         balance: 4200.0,
         created_at: new Date(),
         updated_at: new Date(),
@@ -42,8 +42,8 @@ module.exports = {
       {
         user_id: 5,
         institution_id: 1,
-        agency: "5984",
-        account: "52389364",
+        agency: '5984',
+        account: '52389364',
         balance: 150.0,
         created_at: new Date(),
         updated_at: new Date(),
@@ -51,8 +51,8 @@ module.exports = {
       {
         user_id: 6,
         institution_id: 1,
-        agency: "8861",
-        account: "66987415",
+        agency: '8861',
+        account: '66987415',
         balance: 150.0,
         created_at: new Date(),
         updated_at: new Date(),
@@ -60,9 +60,81 @@ module.exports = {
       {
         user_id: 7,
         institution_id: 1,
-        agency: "1900",
-        account: "98466513",
-        balance: 150.0,
+        agency: '1900',
+        account: '98466513',
+        balance: 1500.0,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 8,
+        institution_id: 1,
+        agency: '0012',
+        account: '45335653',
+        balance: 2600.0,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 9,
+        institution_id: 1,
+        agency: '0010',
+        account: '76523531',
+        balance: 1100.0,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 10,
+        institution_id: 1,
+        agency: '0002',
+        account: '12431200',
+        balance: 3200.0,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 11,
+        institution_id: 1,
+        agency: '2434',
+        account: '43562432',
+        balance: 1500.0,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 12,
+        institution_id: 1,
+        agency: '8934',
+        account: '12392354',
+        balance: 3150.0,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 13,
+        institution_id: 1,
+        agency: '7490',
+        account: '95035253',
+        balance: 1860.0,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 14,
+        institution_id: 1,
+        agency: '0034',
+        account: '08343239',
+        balance: 2600.0,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 15,
+        institution_id: 1,
+        agency: '0123',
+        account: '12094572',
+        balance: 3189.0,
         created_at: new Date(),
         updated_at: new Date(),
       },
@@ -70,6 +142,6 @@ module.exports = {
   },
 
   async down(queryInterface) {
-    await queryInterface.bulkDelete("accounts", null, {});
+    await queryInterface.bulkDelete('accounts', null, {});
   },
 };
